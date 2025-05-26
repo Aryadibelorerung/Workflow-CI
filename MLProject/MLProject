@@ -1,0 +1,10 @@
+name: titanic-predictor
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_path: {type: str, default: "titanic_clean.csv"}
+    command: >
+      python modelling_tuning.py --data-path={data_path}
