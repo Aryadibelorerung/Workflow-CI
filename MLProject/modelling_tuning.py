@@ -11,12 +11,8 @@ from sklearn.metrics import (
     accuracy_score, confusion_matrix, precision_score, recall_score, f1_score
 )
 
-# MLflow Setup
-mlflow.set_tracking_uri("https://dagshub.com/Aryadibelorerung/membangun-system-ml.mlflow")
-mlflow.set_experiment("titanic_opt_experiment")
-
 # Load data
-df = pd.read_csv("../preprocessing/titanic_clean.csv")
+df = pd.read_csv("titanic_clean.csv")
 X = df.drop(columns=["Survived"])
 y = df["Survived"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, test_size=0.2, random_state=42)
