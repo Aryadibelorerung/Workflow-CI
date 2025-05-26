@@ -1,1 +1,1 @@
-https://hub.docker.com/repository/docker/belorerung/workflow-ci
+https://hub.docker.com/r/belorerung/titanic-prediction-model
